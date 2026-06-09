@@ -162,8 +162,7 @@ img {
 /* ============ Hero Section ============ */
 .hero {
   background: linear-gradient(135deg, #6AB04C 0%, #90BE6D 50%, #B8E6A0 100%);
-  padding: 140px 24px 80px;
-  text-align: center;
+  padding: 120px 24px 80px;
   color: white;
   position: relative;
   overflow: hidden;
@@ -181,20 +180,28 @@ img {
 }
 
 .hero-inner {
-  max-width: 800px;
+  max-width: var(--max-width);
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 48px;
 }
 
-.hero h1 {
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-text h1 {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
   letter-spacing: -0.02em;
 }
 
-.hero p {
+.hero-text p {
   font-size: 1.2rem;
   opacity: 0.95;
   margin-bottom: 36px;
@@ -204,15 +211,12 @@ img {
 .hero-buttons {
   display: flex;
   gap: 16px;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .hero-screenshot {
-  max-width: 900px;
-  margin: 48px auto 0;
-  position: relative;
-  z-index: 1;
+  flex: 1;
+  min-width: 0;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0,0,0,0.2);
@@ -958,12 +962,21 @@ img {
 
 /* ============ Responsive ============ */
 @media (max-width: 768px) {
-  .hero h1 {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
     font-size: 2rem;
   }
 
-  .hero p {
+  .hero-text p {
     font-size: 1rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
   }
 
   .page-header h1 {
