@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Notepad++使用教程：从安装设置、基本操作到正则表达式搜索、宏录制、自定义主题等高级技巧。附常用快捷键大全，帮助您快速掌握这款免费代码编辑器。" />
+  <meta name="keywords" content="Notepad++教程,Notepad++使用教程,Notepad++快捷键,Notepad++正则表达式,Notepad++安装教程,Notepad++下载,代码编辑器教程,文本编辑器教程,Notepad++中文版" />
+  <title>Notepad++使用教程 - 入门到高级_快捷键大全_正则表达式</title>
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <div class="nav-logo">N+</div>
+        Notepad++
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">首页</a></li>
+        <li><a href="/download.html">下载</a></li>
+        <li><a href="/features.html">功能</a></li>
+        <li><a href="/versions.html">版本</a></li>
+        <li><a href="/tutorials.html" class="active">教程</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>使用教程</h1>
+    <p>从入门到高级，学习如何高效使用Notepad++进行代码编辑和文本处理。</p>
+  </section>
+
+  <!-- Tutorial Tabs -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="beginner">入门教程</button>
+        <button class="tab-btn" data-tab="intermediate">进阶技巧</button>
+        <button class="tab-btn" data-tab="advanced">高级功能</button>
+        <button class="tab-btn" data-tab="shortcuts">快捷键</button>
+      </div>
+
+      <!-- Beginner -->
+      <div class="tab-content active" id="tab-beginner">
+        <div class="tutorial-grid">
+          <div class="tutorial-item">
+            <div class="tutorial-icon">📦</div>
+            <div>
+              <h4>安装与设置</h4>
+              <p>学习如何下载、安装Notepad++并进行基本设置，包括界面语言选择和主题设置。</p>
+            </div>
+          </div>
+          <div class="tutorial-item">
+            <div class="tutorial-icon">📝</div>
+            <div>
+              <h4>基本操作</h4>
+              <p>掌握Notepad++的基本操作，包括文件创建、打开、保存和编辑等核心功能。</p>
+            </div>
+          </div>
+          <div class="tutorial-item">
+            <div class="tutorial-icon">🎨</div>
+            <div>
+              <h4>语法高亮</h4>
+              <p>了解如何使用Notepad++的语法高亮功能，支持多种编程语言的代码着色。</p>
+            </div>
+          </div>
+          <div class="tutorial-item">
+            <div class="tutorial-icon">🔍</div>
+            <div>
+              <h4>查找与替换</h4>
+              <p>学习使用强大的查找和替换功能，包括正则表达式支持和多文件搜索。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Example: Create First HTML -->
+        <div style="margin-top:48px;">
+          <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:24px;text-align:center;">入门示例：创建您的第一个HTML文件</h3>
+          <div class="step-guide">
+            <div class="step-guide-item">
+              <div class="step-num">1</div>
+              <div>
+                <h4>打开Notepad++</h4>
+                <p>从开始菜单或桌面快捷方式启动Notepad++应用程序。</p>
+              </div>
+            </div>
+            <div class="step-guide-item">
+              <div class="step-num">2</div>
+              <div>
+                <h4>设置语言</h4>
+                <p>在菜单栏选择"语言" &gt; "H" &gt; "HTML"，启用HTML语法高亮。</p>
+              </div>
+            </div>
+            <div class="step-guide-item">
+              <div class="step-num">3</div>
+              <div>
+                <h4>编写HTML代码</h4>
+                <p>在编辑器中输入以下HTML代码：</p>
+                <div class="code-block"><span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+  <span class="tag">&lt;title&gt;</span>我的第一个网页<span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+  <span class="tag">&lt;h1&gt;</span>欢迎来到Notepad++教程<span class="tag">&lt;/h1&gt;</span>
+  <span class="tag">&lt;p&gt;</span>这是一个简单的HTML示例。<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></div>
+              </div>
+            </div>
+            <div class="step-guide-item">
+              <div class="step-num">4</div>
+              <div>
+                <h4>保存文件</h4>
+                <p>按 Ctrl + S 保存文件，命名为"index.html"，并选择"保存类型"为"超文本标记语言文件(*.html)"。</p>
+              </div>
+            </div>
+            <div class="step-guide-item">
+              <div class="step-num">5</div>
+              <div>
+                <h4>预览结果</h4>
+                <p>在文件浏览器中双击保存的HTML文件，在浏览器中查看结果。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intermediate -->
+      <div class="tab-content" id="tab-intermediate">
+        <div class="tutorial-grid">
+          <div class="tutorial-item">
+            <div class="tutorial-icon">📑</div>
+            <div>
+              <h4>多标签页管理</h4>
+              <p>学习如何高效管理多个文件，包括标签页分组、垂直分割和水平分割视图。</p>
+            </div>
+          </div>
+          <div class="tutorial-item">
+            <div class="tutorial-icon">🧩</div>
+            <div>
+              <h4>插件管理</h4>
+              <p>了解如何安装、配置和使用Notepad++插件，扩展编辑器的功能。</p>
+            </div>
+          </div>
+          <div class="tutorial-item">
+            <div class="tutorial-icon">⏺️</div>
+            <div>
+              <h4>宏录制与回放</h4>
+              <p>学习如何录制和回放宏，自动化重复性任务，提高编辑效率。</p>
+            </div>
+          </div>
+          <div class="tutorial-item">
+            <div class="tutorial-icon">📁</div>
+            <div>
+              <h4>代码折叠</h4>
+              <p>掌握代码折叠功能，更好地组织和浏览大型代码文件。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Regex Tutorial -->
+        <div style="margin-top:48px;">
+          <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:24px;text-align:center;">进阶技巧：正则表达式搜索</h3>
+          <div class="step-guide">
+            <div class="step-guide-item">
+              <div class="step-num">1</div>
+              <div>
+                <h4>打开查找对话框</h4>
+                <p>按 Ctrl + F 打开查找对话框。</p>
+              </div>
+            </div>
+            <div class="step-guide-item">
+              <div class="step-num">2</div>
+              <div>
+                <h4>启用正则表达式模式</h4>
+                <p>在查找对话框底部，勾选"正则表达式"选项。</p>
+              </div>
+            </div>
+            <div class="step-guide-item">
+              <div class="step-num">3</div>
+              <div>
+                <h4>常用正则表达式示例</h4>
+                <table class="data-table">
+                  <thead>
+                    <tr><th>表达式</th><th>匹配内容</th><th>用途</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><code>[a-zA-Z]+</code></td><td>单词</td><td>匹配所有字母组成的单词</td></tr>
+                    <tr><td><code>\d{4}-\d{2}-\d{2}</code></td><td>2023-12-25</td><td>匹配日期格式</td></tr>
+                    <tr><td><code>https?://[^\s]+</code></td><td>URL链接</td><td>匹配HTTP/HTTPS链接</td></tr>
+                    <tr><td><code>^\s*//.*$</code></td><td>// 注释</td><td>匹配单行注释</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="step-guide-item">
+              <div class="step-num">4</div>
+              <div>
+                <h4>高级替换技巧</h4>
+                <p>使用捕获组进行高级替换，例如将所有日期格式从"YYYY-MM-DD"替换为"DD/MM/YYYY"：</p>
+                <div class="code-block">查找： <span class="string">(\d{4})-(\d{2})-(\d{2})</span>
+替换为： <span class="string">\3/\2/\1</span>
+
+<span class="comment">其中 \1、\2、\3 分别代表第一个、第二个和第三个捕获组。</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advanced -->
+      <div class="tab-content" id="tab-advanced">
+        <div class="tutorial-grid">
+          <div class="tutorial-item">
+            <div class="tutorial-icon">🔤</div>
+            <div>
+              <h4>自定义语言</h4>
+              <p>学习如何定义自己的语法高亮规则，支持Notepad++默认不支持的编程语言。</p>
+            </div>
+          </div>
+          <div class="tutorial-item">
+            <div class="tutorial-icon">⚡</div>
+            <div>
+              <h4>运行外部命令</h4>
+              <p>了解如何在Notepad++中直接运行编译器、解释器或其他外部工具。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Theme Tutorial -->
+        <div style="margin-top:48px;">
+          <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:24px;text-align:center;">高级功能：自定义主题</h3>
+          <div class="step-guide">
+            <div class="step-guide-item">
+              <div class="step-num">1</div>
+              <div>
+                <h4>打开主题设置</h4>
+                <p>在菜单栏选择"设置" &gt; "样式配置器"，或按 Alt + D。</p>
+              </div>
+            </div>
+            <div class="step-guide-item">
+              <div class="step-num">2</div>
+              <div>
+                <h4>选择主题</h4>
+                <p>在"选择主题"下拉菜单中选择一个基础主题，例如"Zen Burn"。</p>
+              </div>
+            </div>
+            <div class="step-guide-item">
+              <div class="step-num">3</div>
+              <div>
+                <h4>自定义颜色方案</h4>
+                <p>在"语言样式"部分选择要自定义的元素，然后调整颜色、字体样式等属性：</p>
+                <ul style="margin-top:8px;padding-left:20px;color:var(--text-secondary);font-size:0.95rem;line-height:2;">
+                  <li><strong>全局样式：</strong>设置默认文本颜色、背景色和字体</li>
+                  <li><strong>关键字：</strong>设置编程语言关键字的颜色和样式</li>
+                  <li><strong>字符串：</strong>设置字符串字面量的颜色</li>
+                  <li><strong>注释：</strong>设置注释的颜色和样式</li>
+                  <li><strong>数字：</strong>设置数字字面量的颜色</li>
+                  <li><strong>操作符：</strong>设置操作符的颜色</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-guide-item">
+              <div class="step-num">4</div>
+              <div>
+                <h4>保存并应用主题</h4>
+                <p>点击"保存并关闭"按钮保存您的自定义主题设置。</p>
+              </div>
+            </div>
+            <div class="step-guide-item">
+              <div class="step-num">5</div>
+              <div>
+                <h4>导出主题</h4>
+                <p>如需分享您的主题，可以在"用户定义语言"对话框中导出主题文件。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shortcuts -->
+      <div class="tab-content" id="tab-shortcuts">
+        <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:24px;text-align:center;">常用快捷键</h3>
+        <div style="max-width:900px;margin:0 auto;">
+
+          <h4 style="font-size:1.1rem;font-weight:600;margin:24px 0 12px;color:var(--primary-dark);">文件操作</h4>
+          <table class="data-table">
+            <thead>
+              <tr><th>快捷键</th><th>功能</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>Ctrl + N</code></td><td>新建文件</td></tr>
+              <tr><td><code>Ctrl + O</code></td><td>打开文件</td></tr>
+              <tr><td><code>Ctrl + S</code></td><td>保存文件</td></tr>
+              <tr><td><code>Ctrl + Shift + S</code></td><td>另存为</td></tr>
+              <tr><td><code>Ctrl + W</code></td><td>关闭当前文件</td></tr>
+              <tr><td><code>Ctrl + Tab</code></td><td>切换到下一个标签页</td></tr>
+            </tbody>
+          </table>
+
+          <h4 style="font-size:1.1rem;font-weight:600;margin:32px 0 12px;color:var(--primary-dark);">编辑操作</h4>
+          <table class="data-table">
+            <thead>
+              <tr><th>快捷键</th><th>功能</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>Ctrl + Z</code></td><td>撤销</td></tr>
+              <tr><td><code>Ctrl + Y</code></td><td>重做</td></tr>
+              <tr><td><code>Ctrl + X</code></td><td>剪切</td></tr>
+              <tr><td><code>Ctrl + C</code></td><td>复制</td></tr>
+              <tr><td><code>Ctrl + V</code></td><td>粘贴</td></tr>
+              <tr><td><code>Ctrl + A</code></td><td>全选</td></tr>
+            </tbody>
+          </table>
+
+          <h4 style="font-size:1.1rem;font-weight:600;margin:32px 0 12px;color:var(--primary-dark);">搜索与替换</h4>
+          <table class="data-table">
+            <thead>
+              <tr><th>快捷键</th><th>功能</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>Ctrl + F</code></td><td>查找</td></tr>
+              <tr><td><code>Ctrl + H</code></td><td>替换</td></tr>
+              <tr><td><code>F3</code></td><td>查找下一个</td></tr>
+              <tr><td><code>Shift + F3</code></td><td>查找上一个</td></tr>
+              <tr><td><code>Ctrl + Shift + F</code></td><td>在文件中查找</td></tr>
+              <tr><td><code>Ctrl + B</code></td><td>跳转到指定行</td></tr>
+            </tbody>
+          </table>
+
+          <h4 style="font-size:1.1rem;font-weight:600;margin:32px 0 12px;color:var(--primary-dark);">高级编辑</h4>
+          <table class="data-table">
+            <thead>
+              <tr><th>快捷键</th><th>功能</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>Ctrl + D</code></td><td>复制当前行</td></tr>
+              <tr><td><code>Ctrl + L</code></td><td>删除当前行</td></tr>
+              <tr><td><code>Ctrl + T</code></td><td>交换当前行与上一行</td></tr>
+              <tr><td><code>Ctrl + Q</code></td><td>注释/取消注释</td></tr>
+              <tr><td><code>Alt + 鼠标拖动</code></td><td>列选择模式</td></tr>
+              <tr><td><code>Ctrl + Shift + +</code></td><td>折叠当前代码块</td></tr>
+            </tbody>
+          </table>
+
+          <div style="margin-top:24px;padding:16px;background:#F0FFF0;border-radius:8px;font-size:0.9rem;color:var(--text-secondary);">
+            💡 提示：您可以通过"设置" &gt; "快捷键映射"查看和自定义所有快捷键。
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <div class="footer-brand-logo">N+</div>
+          Notepad++
+        </div>
+        <p class="footer-desc">免费开源的代码编辑器，程序员的首选工具。</p>
+      </div>
+      <div class="footer-links-group">
+        <h4>快速链接</h4>
+        <a href="/">首页</a>
+        <a href="/download.html">下载</a>
+        <a href="/features.html">功能特性</a>
+        <a href="/versions.html">版本介绍</a>
+        <a href="/tutorials.html">使用教程</a>
+      </div>
+      <div class="footer-links-group">
+        <h4>相关资源</h4>
+        <a href="#">官方 GitHub</a>
+        <a href="#">插件市场</a>
+        <a href="#">社区论坛</a>
+        <a href="#">开发者文档</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Notepad++ 中文官网. 本站仅用于学习和参考。
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Tab switching
+    document.querySelectorAll('.tab-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var tabContainer = btn.closest('.section-inner');
+        tabContainer.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+        tabContainer.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
